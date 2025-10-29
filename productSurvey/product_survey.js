@@ -27,3 +27,13 @@ document.addEventListener('keydown', function(event) {
         submitFeedback();
     }
 });
+
+const submitButton2 = document.getElementById('submitReview');
+submitButton2.onclick = submitReview;
+
+function submitReview() {
+    const review = document.getElementById('userExperienceText').value;
+    alert('Thank you for your valuable feedback');
+    document.getElementById('userExperience').innerHTML = review;
+    document.getElementById('userReview').style.display = 'block';
+}
